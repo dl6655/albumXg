@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.lq.albumXg.StickyNavLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/rel_layout"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+	>
+	<LinearLayout
+		android:id="@+id/tab_layout"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:orientation="horizontal">
+		<Button
+			android:id="@+id/button1_1"
+			android:layout_gravity="center_vertical"
+			android:layout_margin="8dp"
+			android:padding="8dp"
+			android:textSize="@dimen/text_size_s"
+			android:text="1:1"
+			android:textColor="@color/base"
+			android:background="@color/text"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/button_height"/>
+
+		<Button
+			android:id="@+id/button3_4"
+			android:layout_gravity="center_vertical"
+			android:layout_margin="8dp"
+			android:padding="8dp"
+			android:textSize="@dimen/text_size_s"
+			android:text="3:4"
+			android:textColor="@color/base"
+			android:background="@color/text"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/button_height"/>
+
+		<Button
+			android:id="@+id/buttonFree"
+			android:layout_gravity="center_vertical"
+			android:layout_margin="8dp"
+			android:padding="8dp"
+			android:textSize="@dimen/text_size_s"
+			android:text="FREE"
+			android:textColor="@color/base"
+			android:background="@color/text"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/button_height"/>
+
+		<Button
+			android:id="@+id/buttonDone"
+			android:layout_gravity="center_vertical"
+			android:layout_margin="8dp"
+			android:padding="8dp"
+			android:text="下一步"
+			android:textSize="@dimen/text_size_s"
+			android:textColor="@color/base"
+			android:background="@color/text"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/button_height"/>
+
+	</LinearLayout>
+	<com.lq.albumXg.CropImageView
+		android:padding="8dp"
+		android:id="@+id/cropImageView"
+		android:layout_width="match_parent"
+		android:layout_height="300dp"
+		custom:cropMode="ratio_free"
+		custom:backgroundColor="@color/base"
+		custom:handleColor="@color/handle"
+		custom:guideColor="@color/guide"
+		custom:overlayColor="@color/overlay"
+		custom:frameColor="@color/frame"
+		custom:handleSize="8dp"
+		custom:touchPadding="8dp"
+		custom:handleShowMode="show_always"
+		custom:guideShowMode="show_on_touch"
+		custom:minFrameSize="50dp"
+		custom:frameStrokeWeight="1dp"
+		custom:guideStrokeWeight="1dp"
+		/>
+	<LinearLayout
+		android:id="@+id/tv_layout"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:orientation="horizontal"
+	    android:layout_below="@id/cropImageView"
+
+		>
+
+		<ImageView
+			android:id="@+id/gallery_select_btn"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:background="@android:color/darker_gray"
+            android:src="@drawable/select_pic_up"
+			/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/tv_layout1"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:orientation="horizontal"
+	    android:layout_below="@id/tv_layout"
+		>
+		<ImageView
+			android:layout_marginLeft="10dp"
+			android:id="@+id/left_arrow_1"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:src="@drawable/btn_back_white"
+			/>
+		<TextView
+			android:id="@+id/gallery_item_title"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:text="本地"
+			android:gravity="center"
+		    android:layout_marginRight="50dp"
+		    android:textSize="20sp"
+			/>
+
+	</LinearLayout>
+	<!--
+		<fragment
+			android:id="@+id/layout_frag_grid"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:visibility="gone"
+			android:name="com.lq.albumXg.PicGridFragment"
+			/>
+-->
+
+		<GridView
+			android:id="@+id/layout_grid"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@android:color/white"
+			android:horizontalSpacing="2dp"
+			android:verticalSpacing="0.5dp"
+			android:visibility="gone"
+			>
+		</GridView>
+
+
+    <ListView
+	    android:id="@+id/layout_listview"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#191919"
+	    android:visibility="gone"
+	    >
+
+    </ListView>
+</com.lq.albumXg.StickyNavLayout>
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">albumXg</string>
+	<string name="sys_gallery">调用系统相册</string>
+	<string name="camera_gallery">调用相机相册</string>
+</resources>

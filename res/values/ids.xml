@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--请注意，不要使用这个文件保存viewid-->
+<resources>
+    <item name="selected_view" type="id"/>
+    <item name="tag_view" type="id"/>
+    <item name="tag_info" type="id"/>
+    <item name="tag_url" type="id"/>
+
+    <item name="id_stickynavlayout_topview" type="id"/>
+    <item name="id_stickynavlayout_viewpager" type="id"/>
+    <item name="id_stickynavlayout_indicator" type="id"/>
+    <item name="id_stickynavlayout_innerscrollview" type="id"/>
+    <item name="tab_layout" type="id"/>
+    <item name="cropImageView" type="id"/>
+    <item name="tv_layout" type="id"/>
+    <item name="layout_grid" type="id"/>
+    <item name="layout_listview" type="id"/>
+    <item name="list_grid" type="id"/>
+    <item name="layout_frag_grid" type="id"/>
+
+</resources>
